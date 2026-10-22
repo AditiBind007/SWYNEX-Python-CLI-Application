@@ -1,20 +1,48 @@
-# Python
+#Python
 __pycache__/
 *.py[cod]
 
 .venv/
 venv/
+env/
 
-#Local SQLite databases
+#Local SQLite databases and backups
 *.db
 *.sqlite
 *.sqlite3
 
+#Generated exports
 exports/
+*.csv
+
+#Logs
+*.log
+
+#Database backups
 backups/
+*.bak
 
 # Environment variables and secrets
 .env
+.env.*
+!.env.example
 
-# VS Code workspace settings
+#Build files
+build/
+dist/
+*.egg-info/
+
+#Test and tool caches
+.pytest_cache
+.mypy_cache/
+.ruff_cache/
+.coverage
+html.cov/
+
+# VS Code and other IDE settings
 .vscode/
+.idea/
+
+#Operating system files
+.DS_Store
+Thumbs.db
